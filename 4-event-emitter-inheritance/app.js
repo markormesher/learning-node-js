@@ -1,7 +1,8 @@
-var EventEmitter = require('events');
+lvar EventEmitter = require('events');
 var util = require('util');
 
 function Greeter() {
+	EventEmitter.call(this); // << something like a super-constructor, to cause non-proto props of EventEmitter to be added onto 'this'
 	this.greeting = 'Hello world, ';
 }
 
