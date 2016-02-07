@@ -7,8 +7,7 @@ http.createServer(function(req, res) {
 		'Content-Type': 'text/html'
 	});
 
-	var html = fs.readFileSync(__dirname + '/index.html').toString().replace('{msg}', Math.random());
-
-	res.end(html);
+	// with a stream:
+	fs.createReadStream(__dirname + '/index2.html').pipe(res);
 
 }).listen(3000);
