@@ -1,0 +1,14 @@
+html(ng-app = 'angular-demo')
+	head
+		title Angular Demo
+		script(src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js')
+
+	body(ng-controller = 'MainController as vm')
+		p {{ vm.message }}
+
+		p: input(type = 'text', ng-model = 'vm.message')
+
+		ul
+			li(ng-repeat = 'person in vm.people') {{ person.name }} is {{ person.age }}
+
+		script(src = '/app.js')
