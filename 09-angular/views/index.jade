@@ -11,4 +11,6 @@ html(ng-app = 'angular-demo')
 		ul
 			li(ng-repeat = 'person in vm.people') {{ person.name }} is {{ person.age }}
 
+		script
+			| var peopleFromServer = !{ JSON.stringify(people) };
 		script(src = '/app.js')

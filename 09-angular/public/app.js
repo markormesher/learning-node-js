@@ -4,8 +4,5 @@ angular.module('angular-demo').controller('MainController', mainControllerFuncti
 
 function mainControllerFunction() {
 	this.message = 'Hello world';
-	this.people = [
-		{ name: 'Mark', age: 22 },
-		{ name: 'Ana', age: 20 }
-	];
+	this.people = peopleFromServer;
 }
