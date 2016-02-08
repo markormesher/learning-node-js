@@ -6,4 +6,4 @@ Anyway, this repo is just to move code easily between my different machines as I
 
 ---
 
-**Update:** now that the course is completed, this repo is "dormant".
+**Update - 8th Feb 2016:** now that I've completed the course, this repo is "dormant".
